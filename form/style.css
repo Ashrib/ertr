@@ -1,0 +1,185 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    display: flex;
+    width: calc(100vw);
+    height: calc(100vh);
+    min-width:280px;
+    min-height: 560px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/55/colorful-2174045__340.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-of-signup{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    border: 6px solid rgba(255, 255, 255, 0.558);
+    transform: skewX(-3deg);
+    /* background-color: rgba(255, 255, 255, 0.18); */
+}
+#main-of-signin{
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    height: 55%;
+    border: 6px solid rgba(255, 255, 255, 0.558);
+    transform: skewX(-3deg);
+}
+.main-heading{
+    display: flex;
+    height: 8%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.558);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#signup-body,#signin-body{
+    display: flex;
+    flex-direction: column;
+    height: 92%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.204); 
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: rgb(254, 248, 170); */
+    margin-top: 20px;
+}
+.columns{
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    font-weight: 700;
+    /* background-color: burlywood; */
+}
+#main-of-signin .columns{
+    display: flex;
+    padding: 15px 20px 15px 20px;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    font-weight: 700;
+}
+.txt-inp{
+    font-size: 0.9em;
+    padding: 20px 10px 20px 15px;
+    margin-left: 10px;
+    width: 100%;
+    height: 27px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.558);   
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.188);
+
+}
+.txt-radio,#dob-inp{
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 24px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.188);
+    padding-left: 10px;
+}
+.txt-radio{
+    box-shadow: none;
+}
+#postalcode-inp{
+    font-size: 0.9em;
+    padding: 3px 10px 3px 15px;
+    width: 35%;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.188);
+    background-color: rgba(255, 255, 255, 0.558);
+}
+#userpic-inp{
+    width: 100%;
+    margin-left: 10px;
+}
+#signup-btn, #signin-btn{
+    background-color: rgba(255, 255, 255, 0.558);
+    border: none;
+    font-size: 1.3em;
+    font-weight: 800;
+    cursor: pointer;  
+    padding: 4px 10px 4px 10px;
+    border-radius: 8px;
+    color: rgb(47, 47, 47);
+}
+#signup-btn:hover,#signin-btn:hover{
+    background-color: rgba(255, 0, 0, 0.597);
+}
+#blur{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.19)
+}
+
+
+@media screen and (max-width: 884px) {
+    .rows{
+        margin-top: 2px;
+    }
+    #main-of-signup .txt-inp{
+        padding: 3px 10px 3px 15px;
+        height: 25px;
+    }
+    .columns{
+        padding: 7px 20px 7px 20px;
+    }
+    #signup-btn{
+        padding: 3px 10px 3px 10px;
+        font-size: 1.2em;
+    }
+    #main-of-signin .rows{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 332px) {
+    .rows{
+        margin-top: 1px;
+    }
+    .columns{
+        padding: 6px 20px 6px 20px;
+    }
+    #signup-btn{
+        padding: 2px 9px 2px 9px;
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-height: 834px) {
+    .rows{
+        margin-top: 15px;
+    }
+    #main-of-signup .txt-inp{
+        padding: 3px 10px 3px 15px;
+        height: 29px;
+    }
+    /* .columns{
+        padding: 7px 20px 7px 20px;
+    }
+    #signup-btn{
+        padding: 3px 10px 3px 10px;
+        font-size: 1.2em;
+    }
+    #main-of-signin .rows{
+        margin-top: 20px;
+    } */
+}

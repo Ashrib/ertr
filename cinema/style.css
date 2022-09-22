@@ -1,0 +1,149 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-div{
+    width: calc(100vw);
+    height:calc(100vh);
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font: 600 3rem 'Arial';
+    padding-left: 50px;
+}
+#movies-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgb(5, 5, 5);
+}
+.movie-type-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid gray;
+
+}
+.movie-type-box h1{
+    padding-left: 50px;
+    color: red;
+}
+.movie-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.movie-cards{
+    width: 340px;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.movie-cards-detail{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.821);
+}
+.movie-title{
+    color: white;
+    margin-top: 50px;
+}
+.movie-categorie,.movie-language,.movie-info{
+    font-size: 0.9em;
+    padding: 3px 8px;
+}
+.movie-categorie{
+    background-color: rgb(244, 78, 78);
+}
+.movie-language{
+    margin-top: 5px;
+    background-color: rgb(198, 195, 195);
+}
+.movie-info{
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+.checkout-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding: 3px 12px;
+    cursor: pointer;
+}
+.checkout-btn:hover{
+    padding: 4px 13px;
+
+}
+
+#modal-background{
+    width: calc(100vw);
+    height: calc(100vh);
+    background-color: rgba(0, 0, 0, 0.824);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#booking-modal{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding-bottom: 10px;
+    padding: 0px 5px 0px 5px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#close-modal{
+    text-align: right;
+}
+#close-font{
+    padding: 0px 5px 0px 5px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.445);
+    color: red;
+    cursor: pointer;
+}
+#close-font:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+#modal-heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#seats-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px 10px 20px 10px;
+}
+.seat{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.678);
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 60px;
+    color: white;
+    cursor: pointer;
+}
+.seat:hover{
+    background-color: rgba(255, 0, 0, 0.845);
+
+}
